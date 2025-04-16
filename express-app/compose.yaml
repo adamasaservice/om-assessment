@@ -1,1 +1,17 @@
 # Add code here
+app:
+  title: Backstage
+  baseUrl: http://localhost:4567
+
+organization:
+  name: ACME Corp
+
+backend:
+  baseUrl: http://localhost:7007
+  listen:
+    port: 7007
+  cors:
+    origin: http://localhost:4567
+  database:
+    client: sqlite3
+    connection: ':memory:'
